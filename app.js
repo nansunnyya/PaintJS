@@ -4,8 +4,8 @@ const colors = document.getElementsByClassName("jsColor");
 const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const save = document.getElementById("jsSave");
-
 const INITIAL_COLOR = "balck";
+
 canvas.width = 500;
 canvas.height= 500;
 
@@ -42,7 +42,6 @@ function onMouseMove(event){
 }
 
 function handleColorClick(event){
-    console.log(event);
     const currColor = event.target.style.backgroundColor;
     ctx.strokeStyle = currColor;
     ctx.fillStyle = currColor;
@@ -95,12 +94,11 @@ if(canvas){
     canvas.addEventListener("contextmenu", handleCM);
 }
 
-
 Array.from(colors).forEach(color =>
     color.addEventListener("click",handleColorClick));
 
 if(range){
-range.addEventListener("input", handleRangeClick);
+    range.addEventListener("input", handleRangeClick);
 }
 
 if(mode){

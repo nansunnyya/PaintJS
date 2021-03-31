@@ -6,3 +6,10 @@ Painting board made with JS
 
 
 [결과물 확인](https://nansunnyya.github.io/PaintJS/.)
+
+
+### 기능 구현
+
+1. Paint(펜 색상 변경, 펜 굵기 조절)
+2. Fill(선택한 색으로 영역 채우기)
+3. Save(파일 저장)
